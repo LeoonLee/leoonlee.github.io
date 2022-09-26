@@ -1741,7 +1741,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1664174722645),
+    lastupdate: new Date(1664175327580),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2515,9 +2515,196 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://www.meq.me/2018/05/14/Windows动态链接库（dll）浅析 - 3/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="原野上的眼睛">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="原野上的眼睛">
+    <meta itemprop="description" content="前端软件编程与开发的点滴记录">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/"  itemprop="url">
+        Windows动态链接库（dll）浅析 - 3
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+Windows动态链接库（dll）浅析 - 1
+Windows动态链接库（dll）浅析 - 2
+
+6. DLL的深入使用6.1 DllMain函数　　Windows在加载DLL的时候，需要一个入口函数，就如同控制台或DOS程序需要main函数、WIN32程序需要WinMain函数一样。在前面的例子中，DLL并没有提供DllMain函数，应用工程也能成功引用DLL，这是因为Windows在找...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2018-05-14T17:32:00+08:00">2018-05-14</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://www.meq.me/2018/05/14/Windows动态链接库（dll）浅析 - 2/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="原野上的眼睛">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="原野上的眼睛">
+    <meta itemprop="description" content="前端软件编程与开发的点滴记录">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%202/"  itemprop="url">
+        Windows动态链接库（dll）浅析 - 2
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+Windows动态链接库（dll）浅析 - 1
+Windows动态链接库（dll）浅析 - 3
+
+5. DLL的编写5.1 一个简单的dll项目　　上面用静态链接库的方式提供了add函数接口，下来我们看看用动态链接库的方式如何实现同样的功能。　　首先，在VS中创建一个“动态链接库”项目DllAdd。　　然后，为项目添加lib.cpp及lib.h文件，源码如下：
+lib.cpp:#inclu...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2018-05-14T17:28:00+08:00">2018-05-14</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%202/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://www.meq.me/2018/05/14/Windows动态链接库（dll）浅析 - 1/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="原野上的眼睛">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="原野上的眼睛">
+    <meta itemprop="description" content="前端软件编程与开发的点滴记录">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/"  itemprop="url">
+        Windows动态链接库（dll）浅析 - 1
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+Windows动态链接库（dll）浅析 - 2
+Windows动态链接库（dll）浅析 - 3
+
+本文档源码下载：点击这里
+1. 链接库的概念　　动态链接库（Dynamic link Library, dll），是包含了可由多个程序同时使用的代码（函数、类）和数据的“库”。
+　　
+2. 由来　　在库的发展史上，经历了“无库 - 静态链接库 - 动态链接库”等阶段。　　早期，代码被简单地附加...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2018-05-14T17:25:00+08:00">2018-05-14</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>

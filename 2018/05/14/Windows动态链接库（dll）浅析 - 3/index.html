@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://www.meq.me/2022/09/26/windows动态链接库（dll）浅析 - 1/"/>
+  <link rel="canonical" href="https://www.meq.me/2018/05/14/windows动态链接库（dll）浅析 - 3/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,19 +31,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Windows动态链接库（dll）浅析 - 1 - 原野上的眼睛</title>
+  <title>Windows动态链接库（dll）浅析 - 3 - 原野上的眼睛</title>
   <meta name="keywords" content="Windows,C++,前端开发, 前端编程, Web编程, Linux, c#">
   <meta desc name="description" content="前端软件编程与开发的点滴记录 - Leon - 原野上的眼睛">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows动态链接库（dll）浅析 - 1">
-<meta property="og:url" content="https://www.meq.me/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/index.html">
+<meta property="og:title" content="Windows动态链接库（dll）浅析 - 3">
+<meta property="og:url" content="https://www.meq.me/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/index.html">
 <meta property="og:site_name" content="原野上的眼睛">
-<meta property="og:description" content="Windows动态链接库（dll）浅析 - 2 Windows动态链接库（dll）浅析 - 3  本文档源码下载：点击这里 1. 链接库的概念　　动态链接库（Dynamic link Library, dll），是包含了可由多个程序同时使用的代码（函数、类）和数据的“库”。 　　 2. 由来　　在库的发展史上，经历了“无库 - 静态链接库 - 动态链接库”等阶段。　　早期，代码被简单地附加到调用">
+<meta property="og:description" content="Windows动态链接库（dll）浅析 - 1 Windows动态链接库（dll）浅析 - 2  6. DLL的深入使用6.1 DllMain函数　　Windows在加载DLL的时候，需要一个入口函数，就如同控制台或DOS程序需要main函数、WIN32程序需要WinMain函数一样。在前面的例子中，DLL并没有提供DllMain函数，应用工程也能成功引用DLL，这是因为Windows在找不到D">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-09-26T06:40:45.998Z">
-<meta property="article:modified_time" content="2022-09-20T06:16:46.214Z">
+<meta property="article:published_time" content="2018-05-14T09:32:00.000Z">
+<meta property="article:modified_time" content="2022-09-26T06:54:48.184Z">
 <meta property="article:author" content="Leon">
 <meta property="article:tag" content="Windows">
 <meta property="article:tag" content="C++">
@@ -1744,7 +1744,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1664174722645),
+    lastupdate: new Date(1664175327580),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2511,7 +2511,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://www.meq.me/2022/09/26/Windows动态链接库（dll）浅析 - 1/">
+  <link itemprop="mainEntityOfPage" href="https://www.meq.me/2018/05/14/Windows动态链接库（dll）浅析 - 3/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="原野上的眼睛">
   </span>
@@ -2532,7 +2532,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Windows动态链接库（dll）浅析 - 1
+        Windows动态链接库（dll）浅析 - 3
       </h1>
       <div class='new-meta-box'>
         
@@ -2553,10 +2553,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-09-26T14:40:45+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2018-05-14T17:32:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Sep 26, 2022</p>
+    <p>发布于：May 14, 2018</p>
   </a>
 </div>
 
@@ -2580,72 +2580,101 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <ul>
+<li><a href="/2018/04/17/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/">Windows动态链接库（dll）浅析 - 1</a></li>
 <li><a href="/2018/04/17/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%202/">Windows动态链接库（dll）浅析 - 2</a></li>
-<li><a href="/2018/04/17/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/">Windows动态链接库（dll）浅析 - 3</a></li>
 </ul>
-<p>本文档源码下载：<a href="/assets/20180417101050329-LibraryTest.zip">点击这里</a></p>
-<h2 id="1-链接库的概念"><a href="#1-链接库的概念" class="headerlink" title="1. 链接库的概念"></a>1. 链接库的概念</h2><p>　　动态链接库（Dynamic link Library, dll），是包含了可由多个程序同时使用的代码（函数、类）和数据的“库”。
-　　</p>
-<h2 id="2-由来"><a href="#2-由来" class="headerlink" title="2. 由来"></a>2. 由来</h2><p>　　在库的发展史上，经历了“无库 - 静态链接库 - 动态链接库”等阶段。<br>　　早期，代码被简单地附加到调用它的项目中。如果两个程序同时调用一个子程序，就回出现两份这个子程序的代码；如果采用静态链接库，则lib中的指令都被直接包含在最终生成的目标文件中；而dll则可以在exe文件执行时被动态地引用和卸载。</p>
-<p>[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-50IoDCC1-1658212205302)(<a target="_blank" rel="noopener" href="https://docs.google.com/drawings/d/e/2PACX-1vR_1901vUYj2IHG1ygCW2aP8BmCP53-1ap0rfaGs1lUg3PUxb6Ek1s7LcHc6GBO-ieIyT_hsMi-Lp5a/pub?w=1235&amp;h=1529)%5D">https://docs.google.com/drawings/d/e/2PACX-1vR_1901vUYj2IHG1ygCW2aP8BmCP53-1ap0rfaGs1lUg3PUxb6Ek1s7LcHc6GBO-ieIyT_hsMi-Lp5a/pub?w=1235&amp;h=1529)]</a></p>
-<h2 id="3-DLL的优缺点"><a href="#3-DLL的优缺点" class="headerlink" title="3. DLL的优缺点"></a>3. DLL的优缺点</h2><p>　　dll随处可见，Windows目录下的system32文件夹中会看到kernel32.dll、user32.dll和gdi32.dll，windows的大多数API都包含在这些DLL中。kernel32.dll中的函数主要处理内存管理和进程调度；user32.dll中的函数主要控制用户界面；gdi32.dll中的函数则负责图形方面的操作。</p>
-<ul>
-<li><h3 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h3></li>
-<li><p>dll节省了内存，实现代码重用；</p>
-</li>
-<li><p>dll有助于促进模块化程序开发。</p>
-</li>
-<li><h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3></li>
-<li><p>DLL Hell：即DLL地狱，指几个应用程序在使用同一个共享的DLL库时发生版本冲突。</p>
-</li>
-</ul>
-<h2 id="4-静态链接库"><a href="#4-静态链接库" class="headerlink" title="4.静态链接库"></a>4.静态链接库</h2><p>　　虽然静态链接库不是本文的重点，但通过一个静态链接库的例子有助于帮助我们建立“库”的概念。
-　　</p>
-<h3 id="4-1-使用VS2017创建和使用静态库"><a href="#4-1-使用VS2017创建和使用静态库" class="headerlink" title="4.1 使用VS2017创建和使用静态库"></a>4.1 使用VS2017创建和使用静态库</h3><p><img src="https://img-blog.csdnimg.cn/img_convert/794d38fe8930a46366eb370cf34ed628.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/794d38fe8930a46366eb370cf34ed628.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="使用VS2017建立静态库项目"><br>　　如上图，使用VS2017建立一个静态库工程LibAdd，然后添加lib.cpp和lib.h两个文件，源码如下：</p>
-<p>　　lib.h:</p>
-<pre><code>// lib.h
-#ifndef __LIB_H__    
-#define __LIB_H__    
-
-extern &quot;C&quot; int add(const int x, const int y); //声明为C编译、链接方式的外部函数
-
-#endif
-</code></pre>
-<p>　　lib.cpp:</p>
-<pre><code>// lib.cpp
-#include &quot;lib.h&quot;
-
-int add(const int x, const int y)
+<h2 id="6-DLL的深入使用"><a href="#6-DLL的深入使用" class="headerlink" title="6. DLL的深入使用"></a>6. DLL的深入使用</h2><h3 id="6-1-DllMain函数"><a href="#6-1-DllMain函数" class="headerlink" title="6.1 DllMain函数"></a>6.1 DllMain函数</h3><p>　　Windows在加载DLL的时候，需要一个入口函数，就如同控制台或DOS程序需要main函数、WIN32程序需要WinMain函数一样。在前面的例子中，DLL并没有提供DllMain函数，应用工程也能成功引用DLL，这是因为Windows在找不到DllMain的时候，系统会从其它运行库中引入一个不做任何操作的缺省DllMain函数版本，并不意味着DLL可以放弃DllMain函数。</p>
+<p>　　根据编写规范，Windows必须查找并执行DLL里的DllMain函数作为加载DLL的依据，它使得DLL得以保留在内存里。这个函数并不属于导出函数，而是DLL的内部函数。这意味着不能直接在应用工程中引用DllMain函数，DllMain是自动被调用的。</p>
+<p>　　我们来看一个DllMain函数的例子：</p>
+<pre><code>BOOL APIENTRY DllMain(HANDLE hModule,DWORD ul_reason_for_call, LPVOID lpReserved)
 &#123;
-    return x + y;
+         switch(ul_reason_for_call)
+         &#123;
+         case DLL_PROCESS_ATTACH:
+                   printf(&quot;process attach of dll\n &quot;);
+                   break;
+         case DLL_THREAD_ATTACH:
+                   printf(&quot;thread attach of dll\n &quot;);
+                   break;
+         case DLL_THREAD_DETACH:
+                   printf(&quot;thread detach of dll\n &quot;);
+                   break;
+         case DLL_PROCESS_DETACH:
+                   printf(&quot;process detach of dll\n &quot;);
+                   break;
+         &#125;
+         
+         return TRUE;
 &#125;
 </code></pre>
-<p>　　点击菜单“生成”-&gt;“生成解决方案”，就得到“LibAdd.lib”，这个文件就是一个静态库，它提供了add功能。将lib.h和LibAdd.lib交给用户后，用户就可以直接使用里面的add函数了。<br>　　<br>　　下面，我们从用户角度来演示下怎么使用这个库。<br>　　<br>　　新建一个名为AppCall的Windows控制台应用程序。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/76cbb695c854a1cd1b77adcc11aabbe8.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/76cbb695c854a1cd1b77adcc11aabbe8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="新建Windows控制台程序"><br>　　<br>　　项目中的AppCall.cpp中已经包含了main函数，我们修改AppCall.cpp的内容如下：</p>
+<p>　　DllMain函数在DLL被加载和卸载时被调用，在单个线程启动和终止时，DLLMain函数也被调用，ul_reason_for_call指明了被调用的原因。原因共有4种，即PROCESS_ATTACH、PROCESS_DETACH、THREAD_ATTACH和THREAD_DETACH。</p>
+<p>　　修改上一节中的DllAdd项目中的dllmain.cpp代码如下：</p>
 <pre><code>#include &quot;stdafx.h&quot;
-
 #include &lt;stdio.h&gt;
-#include &quot;..\..\LibAdd\LibAdd\lib.h&quot;
 
-#pragma comment(lib, &quot;..\\..\\LibAdd\\Debug\\LibAdd.lib&quot;)
-
-int main(int argc, char *argv[])
+BOOL APIENTRY DllMain( HMODULE hModule,
+                       DWORD  ul_reason_for_call,
+                       LPVOID lpReserved
+                     )
 &#123;
-    int a = 512;
-    int b = 1024;
-
-    int x = add(a, b);
-
-    printf(&quot;result:%d.&quot;, x);
-
-    return 0;
+    switch (ul_reason_for_call)
+    &#123;
+    case DLL_PROCESS_ATTACH:
+        printf(&quot;process attach of dll\n &quot;);
+        break;
+    case DLL_THREAD_ATTACH:
+        printf(&quot;thread attach of dll\n &quot;);
+        break;
+    case DLL_THREAD_DETACH:
+        printf(&quot;thread detach of dll\n &quot;);
+        break;
+    case DLL_PROCESS_DETACH:
+        printf(&quot;process detach of dll\n &quot;);
+        break;
+    &#125;
+    return TRUE;
 &#125;
 </code></pre>
-<p>　　编译运行，可以看到程序的执行结果。<br>　　代码中的“#pragma comment(lib, “..\..\LibAdd\Debug\LibAdd.lib”)” 的意思是指本文件生成的.obj文件应该与“LibAdd.lib”一起链接。如果不适用“#pragma commet”指定，则可以直接在属性页中的“链接器-&gt;输入-&gt;附加依赖项”中填入库文件的路径。</p>
-<blockquote>
-<h4 id="附：VS中的包含目录和库目录"><a href="#附：VS中的包含目录和库目录" class="headerlink" title="附：VS中的包含目录和库目录"></a>附：VS中的包含目录和库目录</h4><p>　　上面的代码中，“#include “....\LibAdd\LibAdd\lib.h”” 这行使用了相对路径来指定所需要包含的头文件路径。但这样的路径太复杂，而且一旦项目位置更改，就需要修改代码。<br>　　VS中可以通过“项目属性页”中的“包含目录”和“附加包含目录”两个配置选项，增加常用头文件所在路径：<br><img src="https://img-blog.csdnimg.cn/img_convert/b3febe6a10b66e30640a5b2893e483d9.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/b3febe6a10b66e30640a5b2893e483d9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="包含目录"><br><img src="https://img-blog.csdnimg.cn/img_convert/b98401ba19146709a69f946d6246314f.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/b98401ba19146709a69f946d6246314f.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="附加包含目录"><br>　　同样，“库目录”和“附加库目录”可以用来指定所需要使用的lib文件所在目录。<br><img src="https://img-blog.csdnimg.cn/img_convert/1f2b0daddd17360596ce0a6067185369.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/1f2b0daddd17360596ce0a6067185369.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br><img src="https://img-blog.csdnimg.cn/img_convert/cf97dcbbdeb16eb92afebca33ef231a5.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/cf97dcbbdeb16eb92afebca33ef231a5.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>　　额外的，lib还需要在“项目依赖项”中写入lib文件名<br><img src="https://img-blog.csdnimg.cn/img_convert/49813d8521c95d044161243e792ae5b7.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/49813d8521c95d044161243e792ae5b7.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-</blockquote>
-<h3 id="4-2-如何调试库项目"><a href="#4-2-如何调试库项目" class="headerlink" title="4.2 如何调试库项目"></a>4.2 如何调试库项目</h3><p>　　库项目不能单独执行，我们需要在项目属性页中“调试-&gt;命令”中配置调用该库的exe文件的路径，这样就可以对该库项目进行调试了。<br>　　<br>　　更好的办法是，将库项目和应用项目（就是调用库的那个VC项目）放置在同一个工作区，只对应用项目进行调试，前提是保证两个项目都生成了正确的调试信息。在应用项目中调用库中函数的语句处设置断点，执行到此处后执行“单步进入”（默认快捷键：F11），这样就能够执行到库中的函数代码。<br>　　<br>　　上述办法对静态链接库和动态链接库都适用。</p>
+<p>　　<br>    然后重新生成项目。这时再次执行DllCallDynamic项目，会看到输出结果如下：</p>
+<pre><code>process attach of dll
+result:100
+process detach of dll    
+</code></pre>
+<p>　　这一输出顺序验证了DllMain被调用的时机。
+　　</p>
+<h3 id="6-2-stdcall函数"><a href="#6-2-stdcall函数" class="headerlink" title="6.2 __stdcall函数"></a>6.2 __stdcall函数</h3><p>　　如果通过VC++编写的DLL欲被其他语言编写的程序调用，应将函数的调用方式声明为__stdcall方式，WINAPI都采用这种方式，而C&#x2F;C++缺省的调用方式却为__cdecl。__stdcall方式与__cdecl对函数名最终生成符号的方式不同。若采用C编译方式(在C++中需将函数声明为extern”C”)，__stdcall调用约定在输出函数名前面加下划线，后面加“@”符号和参数的字节数，形如_functionname@number；而__cdecl调用约定仅在输出函数名前面加下划线，形如_functionname。Windows编程中常见的几种函数类型声明宏都是与__stdcall和__cdecl有关的（节选自windef.h）：</p>
+<pre><code>#define CALLBACK __stdcall //这就是传说中的回调函数
+#define WINAPI __stdcall   //这就是传说中的WINAPI
+#define WINAPIV __cdecl
+#define APIENTRY WINAPI  //DllMain的入口就在这里
+#define APIPRIVATE __stdcall
+#define PASCAL __stdcall
+</code></pre>
+<p>　　在lib.h 中，应这样声明add函数：</p>
+<pre><code>int __stdcall add(int x,int y);
+</code></pre>
+<p>　　在应用工程中函数指针类型应定义为：</p>
+<pre><code>typedef int(__stdcall *lpAddFun)(int,int);
+</code></pre>
+<p>　　若在lib.h 中将函数声明为__stdcall调用，而应用工程中仍使用typedef int (*lpAddFun)(int,int)，运行时将发生错误（因为类型不匹配，在应用工程中仍然是缺省的__cdecl调用），弹出如图所示的异常。<br><img src="https://img-blog.csdnimg.cn/img_convert/b618dc6021ade4fe5d34b88a432eae61.png" class="lazyload" data-srcset="https://img-blog.csdnimg.cn/img_convert/b618dc6021ade4fe5d34b88a432eae61.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">　　
+　　</p>
+<h2 id="7-DLL的应用"><a href="#7-DLL的应用" class="headerlink" title="7. DLL的应用"></a>7. DLL的应用</h2><p>　　动态链接库（dll）实现了库的共享，体现了代码的重用思想，应用范围非常广泛：</p>
+<ul>
+<li>通用算法</li>
+<li>纯资源dll</li>
+<li>通信控制dll</li>
+<li>Windows模块<br>　　Windows控制面板、ODBC驱动程序、ActiveX控件、COM都是使用dll编程</li>
+</ul>
+<h2 id="8-DLL木马"><a href="#8-DLL木马" class="headerlink" title="8. DLL木马"></a>8. DLL木马</h2><h3 id="8-1-原理"><a href="#8-1-原理" class="headerlink" title="8.1 原理"></a>8.1 原理</h3><p>　　DLL木马的实现原理是编程者在DLL中包含木马程序代码，随后在目标主机中选择特定目标进程，以某种方式强行指定该进程调用包含木马程序的DLL，最终达到侵袭目标系统的目的。<br>　　<br>　　正是DLL程序自身的特点决定了以这种形式加载木马不仅可行，而且具有良好的隐藏性：</p>
+<p>　　（1）DLL程序被映射到宿主进程的地址空间中，它能够共享宿主进程的资源，并根据宿主进程在目标主机的级别非法访问相应的系统资源；<br>　　（2）DLL程序没有独立的进程地址空间，从而可以避免在目标主机中留下“蛛丝马迹”，达到隐蔽自身的目的。<br>　　<br>　　DLL木马注入其它进程的方法为远程线程插入，是通过在另一个进程中创建远程线程的方法进入那个进程的内存地址空间。将木马程序以DLL的形式实现后，需要使用插入到目标进程中的远程线程将该木马DLL插入到目标进程的地址空间，即利用该线程通过调用WindowsAPI“LoadLibrary”函数来加载木马DLL，从而实现木马对系统的侵害。
+　　</p>
+<h3 id="8-2-DLL木马注入程序"><a href="#8-2-DLL木马注入程序" class="headerlink" title="8.2 DLL木马注入程序"></a>8.2 DLL木马注入程序</h3><p>　　(待完成)</p>
+<p>##[参考文档]</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="http://blog.csdn.net/inrgihc/article/details/49283193">http://blog.csdn.net/inrgihc/article/details/49283193</a></li>
+<li><a target="_blank" rel="noopener" href="http://blog.csdn.net/heyabo/article/details/8721611">http://blog.csdn.net/heyabo/article/details/8721611</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.slsup.com/post/54.html">http://www.slsup.com/post/54.html</a></li>
+</ol>
 
   </div>
   
@@ -2670,10 +2699,10 @@ int main(int argc, char *argv[])
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-20T14:16:46+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-26T14:54:48+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 20, 2022</p>
+    <p>更新于：Sep 26, 2022</p>
   </a>
 </div>
 
@@ -2696,7 +2725,7 @@ int main(int argc, char *argv[])
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.meq.me/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/&title=Windows动态链接库（dll）浅析 - 1 - 原野上的眼睛&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.meq.me/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/&title=Windows动态链接库（dll）浅析 - 3 - 原野上的眼睛&summary="
           
           >
           
@@ -2708,7 +2737,7 @@ int main(int argc, char *argv[])
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.meq.me/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/&title=Windows动态链接库（dll）浅析 - 1 - 原野上的眼睛&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.meq.me/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/&title=Windows动态链接库（dll）浅析 - 3 - 原野上的眼睛&summary="
           
           >
           
@@ -2720,7 +2749,7 @@ int main(int argc, char *argv[])
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.meq.me/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/&title=Windows动态链接库（dll）浅析 - 1 - 原野上的眼睛&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.meq.me/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/&title=Windows动态链接库（dll）浅析 - 3 - 原野上的眼睛&summary="
           
           >
           
@@ -2753,35 +2782,24 @@ int main(int argc, char *argv[])
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%202/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Windows动态链接库（dll）浅析 - 2</p>
+        <a class='prev' href='/2019/03/25/%E6%8B%B7%E8%B4%9D%E5%85%AC%E9%92%A5%E5%88%B0%E7%9B%AE%E6%A0%87%E6%9C%8D%E5%8A%A1%E5%99%A8/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>拷贝公钥到目标服务器</p>
+          <p class='content'>假设公钥文件名称是id_dsa.pub
+1ssh-copy-id -i id_dsa.pub –p &lt;port_no&gt; &lt;user&gt;@&lt;host&gt;
+
+其中
+
+...</p>
+        </a>
+      
+      
+        <a class='next' href='/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%202/'>
+          <p class='title'>Windows动态链接库（dll）浅析 - 2<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>
 Windows动态链接库（dll）浅析 - 1
 Windows动态链接库（dll）浅析 - 3
 
 5. DLL的编写5.1 一个简单的dll项目　　上面用静态链接库的方式提供了add函数接口，...</p>
-        </a>
-      
-      
-        <a class='next' href='/2022/09/26/npm%E6%9B%B4%E6%96%B0%E5%8D%87%E7%BA%A7/'>
-          <p class='title'>npm更新升级<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>
-查看npm当前版本
-
-1npm -v
-
-
-更新到最新版本
-
-1npm install -g npm
-
-
-更新到指定版本
-
-1npm -g install npm@6.8.0
-
-
-清理 npm ...</p>
         </a>
       
     </div>
@@ -2797,7 +2815,7 @@ Windows动态链接库（dll）浅析 - 3
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2839,7 +2857,7 @@ Windows动态链接库（dll）浅析 - 3
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%93%BE%E6%8E%A5%E5%BA%93%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">1. 链接库的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%94%B1%E6%9D%A5"><span class="toc-text">2. 由来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-DLL%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-text">3. DLL的优缺点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A"><span class="toc-text">缺点：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93"><span class="toc-text">4.静态链接库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E4%BD%BF%E7%94%A8VS2017%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8%E9%9D%99%E6%80%81%E5%BA%93"><span class="toc-text">4.1 使用VS2017创建和使用静态库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%99%84%EF%BC%9AVS%E4%B8%AD%E7%9A%84%E5%8C%85%E5%90%AB%E7%9B%AE%E5%BD%95%E5%92%8C%E5%BA%93%E7%9B%AE%E5%BD%95"><span class="toc-text">附：VS中的包含目录和库目录</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%A6%82%E4%BD%95%E8%B0%83%E8%AF%95%E5%BA%93%E9%A1%B9%E7%9B%AE"><span class="toc-text">4.2 如何调试库项目</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#6-DLL%E7%9A%84%E6%B7%B1%E5%85%A5%E4%BD%BF%E7%94%A8"><span class="toc-text">6. DLL的深入使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-DllMain%E5%87%BD%E6%95%B0"><span class="toc-text">6.1 DllMain函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-stdcall%E5%87%BD%E6%95%B0"><span class="toc-text">6.2 __stdcall函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-DLL%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">7. DLL的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-DLL%E6%9C%A8%E9%A9%AC"><span class="toc-text">8. DLL木马</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E5%8E%9F%E7%90%86"><span class="toc-text">8.1 原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-DLL%E6%9C%A8%E9%A9%AC%E6%B3%A8%E5%85%A5%E7%A8%8B%E5%BA%8F"><span class="toc-text">8.2 DLL木马注入程序</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3422,7 +3440,7 @@ Windows动态链接库（dll）浅析 - 3
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"原野上的眼睛","url":"https://www.meq.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Leon","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.meq.me/","sameAs":["https://github.com/volantis-x"],"description":"前端软件编程与开发的点滴记录"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.meq.me/","name":"原野上的眼睛"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.meq.me/2022/09/26/Windows动态链接库（dll）浅析 - 1/","name":"Windows动态链接库（dll）浅析 - 1"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"原野上的眼睛","url":"https://www.meq.me/","keywords":"前端开发, 前端编程, Web编程, Linux, c#","description":"前端软件编程与开发的点滴记录","author":{"@type":"Person","name":"Leon","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.meq.me/","description":"前端软件编程与开发的点滴记录"},"publisher":{"@type":"Organization","name":"原野上的眼睛","url":"https://www.meq.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.meq.me?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Windows动态链接库（dll）浅析 - 1","description":"前端软件编程与开发的点滴记录","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.meq.me/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/"},"author":{"@type":"Person","name":"Leon","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.meq.me/"},"publisher":{"@type":"Organization","name":"原野上的眼睛","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.meq.me/2022/09/26/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%201/","wordCount":0,"datePublished":"2022-09-26T06:40:45.998Z","dateModified":"2022-09-20T06:16:46.214Z","keywords":"Windows,C++","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"原野上的眼睛","url":"https://www.meq.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Leon","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.meq.me/","sameAs":["https://github.com/volantis-x"],"description":"前端软件编程与开发的点滴记录"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.meq.me/","name":"原野上的眼睛"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.meq.me/2018/05/14/Windows动态链接库（dll）浅析 - 3/","name":"Windows动态链接库（dll）浅析 - 3"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"原野上的眼睛","url":"https://www.meq.me/","keywords":"前端开发, 前端编程, Web编程, Linux, c#","description":"前端软件编程与开发的点滴记录","author":{"@type":"Person","name":"Leon","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.meq.me/","description":"前端软件编程与开发的点滴记录"},"publisher":{"@type":"Organization","name":"原野上的眼睛","url":"https://www.meq.me/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.meq.me?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Windows动态链接库（dll）浅析 - 3","description":"前端软件编程与开发的点滴记录","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.meq.me/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/"},"author":{"@type":"Person","name":"Leon","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://www.meq.me/"},"publisher":{"@type":"Organization","name":"原野上的眼睛","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.meq.me/2018/05/14/Windows%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93%EF%BC%88dll%EF%BC%89%E6%B5%85%E6%9E%90%20-%203/","wordCount":0,"datePublished":"2018-05-14T09:32:00.000Z","dateModified":"2022-09-26T06:54:48.184Z","keywords":"Windows,C++","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
