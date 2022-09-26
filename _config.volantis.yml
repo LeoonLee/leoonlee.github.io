@@ -1,0 +1,71 @@
+############################### Navigation Bar ############################### > start
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
+navbar:
+  visiable: auto
+  logo:
+    img: /assets/logo.png
+    icon:
+    title:
+############################### Navigation Bar ############################### > end
+
+############################### Cover ############################### > start
+cover:
+  # height_scheme: full # full, half
+  title: '原野上的眼睛'
+  subtitle: 'Leon的开发笔记本'
+  background: /assets/coverbg.jpg
+  features:
+    - name: 博客
+      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg
+      url: /
+    - name: 分类
+      img: volantis-static/media/twemoji/assets/svg/1f516.svg
+      url: /categories/
+      target: _self
+    - name: 标签
+      img: volantis-static/media/twemoji/assets/svg/1f4af.svg
+      url: /tags/
+    - name: 归档
+      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg
+      url: /archives/
+    - name: 友链
+      img: volantis-static/media/twemoji/assets/svg/1f4ac.svg
+      url: /friends/
+    - name: 关于
+      img: volantis-static/media/twemoji/assets/svg/1f497.svg
+      url: /about/
+############################### Cover ############################### > start
+
+############################### Comment ############################### > start
+comments:
+  service: giscus
+  giscus:
+    theme:
+      light: "light"
+      dark: "dark"
+    repo: LeoonLee/leoonlee.github.io
+    repo-id: R_kgDOH_qCpA
+    category: Announcements
+    category-id: DIC_kwDOH_qCpM4CReu8
+    mapping: pathname
+    strict: 0
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    lang: "zh-CN"
+    input-position: "top"
+############################### Comment ############################### > end
+
+############################### Footer ############################### > start
+site_footer:
+  # layout of footer: [aplayer, social, license, info, copyright]
+  layout: [social, license, info, copyright, beian]
+  social:
+    - icon: fas fa-envelope
+      url: mailto:liting6680@gmail.com
+    - icon: fab fa-github
+      url: https://github.com/LeoonLee
+    - icon: fas fa-headphones-alt
+      url: https://music.163.com/#/user/home?id=333666
+  # You can add your own property here. (Support markdown, for example: br: '<br>')
+  beian: '[备案号：陕ICP备15016222号-1](https://beian.miit.gov.cn/#/Integrated/index)'
+############################### Footer ############################### > end
